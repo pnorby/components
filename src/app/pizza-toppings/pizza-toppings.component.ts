@@ -28,13 +28,11 @@ export class PizzaToppingsComponent implements OnInit {
     this.availablePizzaToppings = pt.map(
       x => ({
         ...x
-        , checked: false
+        , checked: true
       })
     );
 
     console.log(this.availablePizzaToppings);
-    
 
   }
-
 }
