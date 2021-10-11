@@ -19,7 +19,7 @@ export class PizzaToppingsComponent implements OnInit {
     private pizzaSvc: PizzaService
   ) { }
 
-  availablePizzaToppings: PizzaToppingDisplay[] = [];
+  availablePizzaToppings: PizzaToppingDisplay[]= [];
   ngOnInit(): void {
 
     const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
@@ -33,6 +33,5 @@ export class PizzaToppingsComponent implements OnInit {
     );
 
     console.log(this.availablePizzaToppings);
-
   }
 }
