@@ -18,21 +18,21 @@ export class PizzaToppingsComponent implements OnInit {
     private pizzaSvc: PizzaService
   ) { }
 
-  avaiblePizzaToppings: PizzaToppingDisplay[] = [];
+  availablePizzaToppings: PizzaToppingDisplay[] = [];
 
   ngOnInit(): void {
 
     const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
     console.log(pt);
 
-    this.avaiblePizzaToppings = pt.map(
+    this.availablePizzaToppings = pt.map(
       x => ({
         ...x
         , checked: false
       })
     );
 
-    console.log(this.avaiblePizzaToppings);
+    console.log(this.availablePizzaToppings);
   }
 
 }
