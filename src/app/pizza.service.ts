@@ -10,7 +10,7 @@ export class PizzaService {
   getPizzaToppingsFromTheCloud() {
     const toppingsFromWebService = [
       {
-        name: 'olives'
+        name: 'Olives'
         , price: 2.25
       },
       {
