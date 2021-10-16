@@ -11,12 +11,11 @@ export class PizzaToppingsComponent implements OnInit {
 
     //
   constructor(
-      private pizzasvc: PizzaService
+      private pizzaSvc: PizzaService
   ) { }
 
   ngOnInit(): void {
-
-      const pt = this.pizzasvc.getPizzaToppingsFromTheCloud();
+      const pt = this.pizzaSvc.getPizzaToppings();
       console.log(pt);
 
   }

@@ -7,9 +7,8 @@ export class PizzaService {
 
   constructor() { }
 
-  getPizzaToppingsFromTheCloud() {
+  getPizzaToppings() {
       //Pretend to get a web service call
-
       const toppings = [
           {
               name: 'Olives',
@@ -24,6 +23,7 @@ export class PizzaService {
               price: 1.75
           }
       ];
+
       return toppings;
   }
 }
