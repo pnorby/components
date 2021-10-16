@@ -4,10 +4,11 @@
     </mat-card-title>
     <mat-form-field appearance="fill">
        <mat-select>
-           <mat-option value="charred">Charred to a Crisp!</mat-option>
-           <mat-option value="sloppy">Dump a cup of water on it.</mat-option>
-           <mat-option value="fire">Serve pizza whilst aflame</mat-option>
-           <mat-option value="normal">Normal (no fire, char or water)</mat-option>
+           <mat-option 
+                *ngFor="let preference of preferences"
+                [value]="preference.value">
+            {{preference.viewValue}}
+        </mat-option>
        </mat-select>
     </mat-form-field>
     &nbsp;
