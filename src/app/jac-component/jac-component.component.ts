@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './jac-component.component.html',
   styleUrls: ['./jac-component.component.css']
 })
-export class JacComponentComponent implements OnInit {
+export class JacComponentComponent {
 
   constructor() { }
 
