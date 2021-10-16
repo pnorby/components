@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SlackNTellService } from '../slack-ntell.service';
 
 @Component({
   selector: 'app-jv-slack-n-tell',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JvSlackNTellComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private slackNTellSvc: SlackNTellService
+  ) { }
 
   ngOnInit(): void {
+
+    const app = this.slackNTellSvc.getAppetizers
+    console.log(app)
   }
 
 }
