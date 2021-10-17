@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< Updated upstream
 import { PizzaService } from '../pizza.service';
 
 interface PizzaToppingDisplay {
@@ -7,8 +6,6 @@ interface PizzaToppingDisplay {
   price: number;
   checked: boolean;
 }
-=======
->>>>>>> Stashed changes
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -17,7 +14,6 @@ interface PizzaToppingDisplay {
 })
 export class PizzaToppingsComponent implements OnInit {
 
-<<<<<<< Updated upstream
   // Magic DI... Dependency injection...
   constructor(
     private pizzaSvc: PizzaService
@@ -66,11 +62,4 @@ export class PizzaToppingsComponent implements OnInit {
     })
   );
 
-=======
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
->>>>>>> Stashed changes
 }
