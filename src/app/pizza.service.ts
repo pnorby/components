@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class PizzaService {
 
   constructor() { }
+<<<<<<< Updated upstream
 
   getPizzaToppingsFromTheCloud() {
     // Pretend we make a web service call here.
@@ -26,4 +27,6 @@ export class PizzaService {
 
     return toppingsFromWebService;
   }
+=======
+>>>>>>> Stashed changes
 }
