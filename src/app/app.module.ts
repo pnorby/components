@@ -14,11 +14,16 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    TjsAdditionComponent
+    TjsAdditionComponent,
+    TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -27,8 +32,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
