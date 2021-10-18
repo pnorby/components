@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { SlackNTellService } from '../slack-ntell.service';
 
+interface AppetizersDisplay {
+  name: string,
+  price: number,
+  checked: boolean
+};
+
 @Component({
   selector: 'app-jv-slack-n-tell',
   templateUrl: './jv-slack-n-tell.component.html',
@@ -12,10 +18,30 @@ export class JvSlackNTellComponent implements OnInit {
     private slackNTellSvc: SlackNTellService
   ) { }
 
+  availableAppetizers: AppetizersDisplay[] = [];
+
   ngOnInit(): void {
 
-    const app = this.slackNTellSvc.getAppetizers
-    console.log(app)
+    const apps = this.slackNTellSvc.getAppetizers()
+    console.log(apps)
+
+    this.availableAppetizers = apps.map(
+      x => ({
+        ...x
+        , checked: false
+      })
+    );
+    console.log(this.availableAppetizers)
   }
 
+appsPrice = 0;
+
+totalAppsPrice = () => {
+  this.appsPrice = this.availableAppetizers
+  .filter(x => x.checked)
+  .reduce(
+    (acc, x) => acc + x.price
+    , 0
+  );
+}
 }

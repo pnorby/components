@@ -20,3 +20,22 @@
             Soup of the Day
         </mat-checkbox><br>
     </mat-card-content>
+    <h2>appetizers</h2>
+    <div
+    *ngFor="let apps of availableAppetizers"
+    >
+    <label>
+        <input 
+        type="checkbox" 
+        [(ngModel)]="apps.checked"/>
+        {{apps.name}} {{apps.price | currency}}
+    </label>
+</div>
+<br><br>
+Selections: 
+<button
+(click)="totalAppsPrice()"
+>
+Calculate Cost
+</button>
+<h3>Total Cost: {{appsPrice | currency}}</h3>
