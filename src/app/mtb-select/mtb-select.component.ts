@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-mtb-select',
@@ -12,7 +13,8 @@ export class MtbSelectComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  selected = "";
 
 }
+
 

@@ -5,20 +5,24 @@
         Click here for the quote of the day.
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <blockquote>"I still own you."
+    <blockquote color="primary">"I still own you."
       <br>- Aaron Rodgers</blockquote>
   </mat-expansion-panel>
-  <!--
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false"> -->
-    <!-- <mat-expansion-panel-header> -->
-      <!-- <mat-panel-title>
-        Self aware panel
-      </mat-panel-title>  -->
-      <!-- <mat-panel-description>
-        Currently I am {{panelOpenState ? 'open' : 'closed'}}
-      </mat-panel-description> -->
-    <!-- </mat-expansion-panel-header> -->
-    <!-- <p>- Aaron Rodgers</p> -->
-  <!-- </mat-expansion-panel> -->
 </mat-accordion>
+<h1>New quote of the day!</h1>
+<mat-form-field appearance="fill">
+  <mat-label>Select an option</mat-label>
+  <mat-select [(value)]="selected">
+    <mat-option
+    value="I still own you!">
+    Aaron Rodgers</mat-option>
+    <mat-option
+    value="I’m not superstitious, but I am a little ‘stitious.'">
+    Michael Scott</mat-option>
+    <mat-option
+    value="If there’s one thing I hate, it’s losing. If there are two things I hate, then it’s losing and getting cancer.">
+    Kenny Powers</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>Quote: {{ selected }}</p>
