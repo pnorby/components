@@ -23,7 +23,6 @@ export class JvSlackNTellComponent implements OnInit {
   ngOnInit(): void {
 
     const apps = this.slackNTellSvc.getAppetizers()
-    console.log(apps)
 
     this.availableAppetizers = apps.map(
       x => ({
@@ -31,19 +30,27 @@ export class JvSlackNTellComponent implements OnInit {
         , checked: false
       })
     );
-    console.log(this.availableAppetizers)
   }
 
-appsPrice = 0;
+get appsPrice(){
+return this.availableAppetizers
+.filter(
+  x => x.checked
+)
+.reduce(
+  (acc, x)=> acc + x.price
+  , 0
+)
+;
+} 
 
-totalAppsPrice = () => {
-  this.appsPrice = this.availableAppetizers
-  .filter(x => x.checked)
-  .reduce(
-    (acc, x) => acc + x.price
-    , 0
-  );
+get apps() { // right now: ['1','3']
+  return this.availableAppetizers
+            .filter(x => x.checked)
+            .map(x => x.name)
 }
+
+
 checkAllApps = () => this.availableAppetizers = this.availableAppetizers.map(
   x => ({
     ...x

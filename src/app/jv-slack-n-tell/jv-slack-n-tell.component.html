@@ -17,6 +17,7 @@
     >
         None
     </button>
+    <br><br>
         <div
         *ngFor="let apps of availableAppetizers"
         >
@@ -29,10 +30,6 @@
     </div>
     </mat-card-content>
 <br><br>
-Selections: 
-<button
-(click)="totalAppsPrice()"
->
-Calculate Cost
-</button>
+
 <h3>Total Cost: {{appsPrice | currency}}</h3>
+<h3>Selections: {{ apps }}</h3>
