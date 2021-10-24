@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { SlackNTellService } from '../slack-ntell.service';
 
 interface AppetizersDisplay {
-  name: string,
-  price: number,
-  checked: boolean
+  name: string;
+  price: number;
+  checked: boolean;
 };
 
 @Component({
@@ -44,4 +44,17 @@ totalAppsPrice = () => {
     , 0
   );
 }
+checkAllApps = () => this.availableAppetizers = this.availableAppetizers.map(
+  x => ({
+    ...x
+    , checked: true
+  })
+);
+
+uncheckAllApps = () => this.availableAppetizers = this.availableAppetizers.map(
+  x => ({
+    ...x
+    , checked: false
+  })
+);
 }

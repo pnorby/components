@@ -3,34 +3,31 @@
         Appetizers
     </mat-card-title>
     <mat-card-content>
-        <mat-checkbox
-        color="warn">
-            Wings
-        </mat-checkbox><br>
-        <mat-checkbox
-        color="warn">
-            Mozzarella Sticks
-        </mat-checkbox><br>
-        <mat-checkbox
-        color="warn">
-            Potato Skins
-        </mat-checkbox><br>
-        <mat-checkbox
-        color="warn">
-            Soup of the Day
-        </mat-checkbox><br>
-    </mat-card-content>
-    <h2>appetizers</h2>
-    <div
-    *ngFor="let apps of availableAppetizers"
+        <button
+        mat-mini-fab
+        (click)="checkAllApps()"
     >
-    <label>
-        <input 
-        type="checkbox" 
-        [(ngModel)]="apps.checked"/>
-        {{apps.name}} {{apps.price | currency}}
-    </label>
-</div>
+        All
+    </button>
+    &nbsp;
+    <button
+        mat-mini-fab
+        color="secondary"
+        (click)="uncheckAllApps()"
+    >
+        None
+    </button>
+        <div
+        *ngFor="let apps of availableAppetizers"
+        >
+        <label>
+            <input 
+            type="checkbox" 
+            [(ngModel)]="apps.checked"/>
+            {{apps.name}} {{apps.price | currency}}
+        </label>
+    </div>
+    </mat-card-content>
 <br><br>
 Selections: 
 <button
