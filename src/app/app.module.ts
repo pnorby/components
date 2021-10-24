@@ -15,12 +15,15 @@ import { JacComponentComponent } from './jac-component/jac-component.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select'
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    JacComponentComponent
+    AppComponent
+    , JacComponentComponent
+    , PizzaToppingsComponent
+    , TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -31,6 +34,7 @@ import {MatSelectModule} from '@angular/material/select'
     , MatCheckboxModule
     , MatFormFieldModule
     , MatSelectModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
