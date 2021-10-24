@@ -12,11 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JvSlackNTellComponent } from './jv-slack-n-tell/jv-slack-n-tell.component';
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     JvSlackNTellComponent
+    , TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -25,6 +30,8 @@ import { JvSlackNTellComponent } from './jv-slack-n-tell/jv-slack-n-tell.compone
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
