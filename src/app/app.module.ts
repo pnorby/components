@@ -10,10 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material/card';
 import { MatButton, MatButtonModule} from '@angular/material/button';
 import { MatCheckboxModule} from '@angular/material/checkbox';
+import { PnComponentColorComponent } from './pn-component-color/pn-component-color.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    PnComponentColorComponent
   ],
   imports: [
     BrowserModule
