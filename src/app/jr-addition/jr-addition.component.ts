@@ -19,4 +19,8 @@ export class JrAdditionComponent implements OnInit {
   add = () => {
       this.total = this.numberOne + this.numberTwo;
   }
+
+  divideByTwo = () => {
+      this.total = this.total/2;
+  }
 }
