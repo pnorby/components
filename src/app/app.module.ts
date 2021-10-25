@@ -17,13 +17,14 @@ import {MatSelectModule} from '@angular/material/select'
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatInputModule } from '@angular/material/input';
+import { JrAdditionComponent } from './jr-addition/jr-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent
     , JacComponentComponent
     , PizzaToppingsComponent
-    , TjsMultiplicationComponent
+    , TjsMultiplicationComponent, JrAdditionComponent
   ],
   imports: [
     BrowserModule
