@@ -1,6 +1,6 @@
 <h1>I'm bored what to do?</h1>
 <div *ngFor="let activity of activities">
-    <input type="radio" id="options1" [(ngModel)]="myRadio" value="{{ activity }}"> {{ activity }}
+    <mat-radio-button [(ngModel)]="myRadio" value="{{ activity }}" ngDefaultControl> {{ activity | titlecase }}</mat-radio-button>
 </div>
 <br/>
 <button mat-raised-button color="accent" (click)="findSomethingToDo()">
