@@ -7,9 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoredComponent implements OnInit {
 
-  constructor() { }
+  activity: string;
+
+  constructor() { 
+    this.activity = '';
+  }
 
   ngOnInit(): void {
   }
+
+
+
+  findSomethingToDo() {
+
+  const url = 'https://www.boredapi.com/api/activity/';
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        // Do something with the data
+        this.activity = `You should ${data.activity.toLowerCase()}.`;
+        console.log(data.activity);
+    })
+    .catch(error => console.log(error))
+    .finally(() => {
+        // Finally do something
+    });
+
+
+
+  }
+
+
+
+
 
 }
