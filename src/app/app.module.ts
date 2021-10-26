@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
-<<<<<<< Updated upstream
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,20 +11,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+import { JacComponentComponent } from './jac-component/jac-component.component';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select'
+
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-=======
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
+
     AppComponent,
     PizzaToppingsComponent
-<<<<<<< Updated upstream
     , TjsMultiplicationComponent
-=======
->>>>>>> Stashed changes
+
   ],
   imports: [
     BrowserModule
@@ -35,6 +34,7 @@ import { MatInputModule } from '@angular/material/input';
     , MatButtonModule
     , MatCheckboxModule
     , MatFormFieldModule
+    , MatSelectModule
     , MatInputModule
   ],
   providers: [],
