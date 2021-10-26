@@ -1,13 +1,12 @@
 <h1>I'm bored what to do?</h1>
-<button
-mat-raised-button
-color="accent"
-(click)="findSomethingToDo()"
->
-What To Do
+<div *ngFor="let activity of activities">
+    <input type="radio" id="options1" [(ngModel)]="myRadio" value="{{ activity }}"> {{ activity }}
+</div>
+<br/>
+<button mat-raised-button color="accent" (click)="findSomethingToDo()">
+    What To Do
 </button>
-<br/><br/>
-<h1>
-     {{ activity }}
-</h1>
 
+<h1>
+    {{ activity }}
+</h1>

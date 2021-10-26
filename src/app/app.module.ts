@@ -14,6 +14,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JacComponentComponent } from './jac-component/jac-component.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select'
+import {MatRadioModule} from '@angular/material/radio'
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatInputModule } from '@angular/material/input';
@@ -37,6 +38,7 @@ import { BoredComponent } from './bored/bored.component';
     , MatFormFieldModule
     , MatSelectModule
     , MatInputModule
+    , MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

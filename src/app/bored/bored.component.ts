@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-bored',
   templateUrl: './bored.component.html',
@@ -8,19 +9,25 @@ import { Component, OnInit } from '@angular/core';
 export class BoredComponent implements OnInit {
 
   activity: string;
+  activities: string[];
+  myRadio: string;
+  value: string;
+
+
 
   constructor() { 
     this.activity = '';
+    this.activities = ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"];
+    this.myRadio = '';
+    this.value = '';
   }
 
   ngOnInit(): void {
   }
 
-
-
   findSomethingToDo() {
 
-  const url = 'https://www.boredapi.com/api/activity/';
+  const url = `https://www.boredapi.com/api/activity?type=${this.myRadio}`;
 
     fetch(url)
     .then(response => response.json())
