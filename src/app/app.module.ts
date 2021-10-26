@@ -17,6 +17,7 @@ import {MatSelectModule} from '@angular/material/select'
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatInputModule } from '@angular/material/input';
+import { BoredComponent } from './bored/bored.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatInputModule } from '@angular/material/input';
     , JacComponentComponent
     , PizzaToppingsComponent
     , TjsMultiplicationComponent
+    , BoredComponent
   ],
   imports: [
     BrowserModule
