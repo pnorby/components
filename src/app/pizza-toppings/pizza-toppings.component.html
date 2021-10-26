@@ -10,6 +10,7 @@
         <button mat-mini-fab color="secondary" (click)="uncheckAll()">
             None
         </button>
+        <br/><br>
         <div *ngFor="let pt of availablePizzaToppings">
             <label>
                 <mat-checkbox [(ngModel)]="pt.checked">
