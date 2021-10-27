@@ -48,6 +48,7 @@ get apps() { // right now: ['1','3']
   return this.availableAppetizers
             .filter(x => x.checked)
             .map(x => x.name)
+            .join(", ");
 }
 
 
