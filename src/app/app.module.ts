@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select'
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatInputModule } from '@angular/material/input';
+import { JtikuColorGameComponent } from './jtiku-color-game/jtiku-color-game.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { MatInputModule } from '@angular/material/input';
     , JacComponentComponent
     , PizzaToppingsComponent
     , TjsMultiplicationComponent
-    , JvSlackNTellComponent
+    , JvSlackNTellComponent, JtikuColorGameComponent
   ],
   imports: [
     BrowserModule
