@@ -4,5 +4,33 @@
     <mat-card-title>
         Nora's week 7 slack-n-tell
     </mat-card-title>
-    <mat-card-content></mat-card-content>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>
+                Enter your favorite color
+
+
+            </mat-label>
+            <input 
+            
+            matInput
+            type="text"
+            
+            [(ngModel)]="apps.checked"
+
+            />
+        </mat-form-field>
+
+            &nbsp;
+            <button 
+                mat-stroked-button
+                (click)="add()"
+            
+            >
+                Add Your color:
+
+            </button>
+            &nbsp;
+            {{allNums}}
+    </mat-card-content>
 </mat-card>
