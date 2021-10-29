@@ -14,11 +14,13 @@ import { JvSlackNTellComponent } from './jv-slack-n-tell/jv-slack-n-tell.compone
 
 import { JacComponentComponent } from './jac-component/jac-component.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select'
+/*import {MatSelectModule} from '@angular/material/select'*/
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatInputModule } from '@angular/material/input';
 import { JtikuColorGameComponent } from './jtiku-color-game/jtiku-color-game.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { JtikuColorGameComponent } from './jtiku-color-game/jtiku-color-game.com
     , MatFormFieldModule
     , MatSelectModule
     , MatInputModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
