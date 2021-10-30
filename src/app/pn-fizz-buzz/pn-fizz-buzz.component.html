@@ -1,1 +1,15 @@
-<p>pn-fizz-buzz works!</p>
+<mat-card>
+    <mat-card-title>
+        Paul's Fizz Buzz generator
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+        <mat-label>Number:</mat-label>        
+        <input matInput type="number" [(ngModel)]="theNumber"/>
+        </mat-form-field>
+        <button mat-mini-fab color="secondary" (click)="checkFizzBuzz()">
+            FB
+        </button>
+        <p>{{theResult}}</p>
+    </mat-card-content>
+</mat-card>
