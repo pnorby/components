@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PnComponentColorComponent } from './pn-component-color.component';
+import { PnFizzBuzzComponent } from './pn-fizz-buzz.component';
 
-describe('PnComponentColorComponent', () => {
-  let component: PnComponentColorComponent;
-  let fixture: ComponentFixture<PnComponentColorComponent>;
+describe('PnFizzBuzzComponent', () => {
+  let component: PnFizzBuzzComponent;
+  let fixture: ComponentFixture<PnFizzBuzzComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PnComponentColorComponent ]
+      declarations: [ PnFizzBuzzComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PnComponentColorComponent);
+    fixture = TestBed.createComponent(PnFizzBuzzComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

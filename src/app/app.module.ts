@@ -10,12 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material/card';
 import { MatButton, MatButtonModule} from '@angular/material/button';
 import { MatCheckboxModule} from '@angular/material/checkbox';
-import { PnComponentColorComponent } from './pn-component-color/pn-component-color.component';
+import { PnFizzBuzzComponent } from './pn-fizz-buzz/pn-fizz-buzz.component';
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    PnComponentColorComponent
+    PnFizzBuzzComponent
   ],
   imports: [
     BrowserModule
