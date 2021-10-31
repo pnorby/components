@@ -8,17 +8,26 @@ import { PnFizzBuzzComponent } from './pn-fizz-buzz/pn-fizz-buzz.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatCardModule} from '@angular/material/card';
-import { MatButtonModule} from '@angular/material/button';
-import { MatCheckboxModule} from '@angular/material/checkbox';
-import { MatInputModule} from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { JvSlackNTellComponent } from './jv-slack-n-tell/jv-slack-n-tell.component';
+
+import { JacComponentComponent } from './jac-component/jac-component.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select'
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    PnFizzBuzzComponent    
+    AppComponent
+    , JacComponentComponent
+    , PizzaToppingsComponent
+    , TjsMultiplicationComponent
+    , JvSlackNTellComponent
+    , PnFizzBuzzComponent
   ],
   imports: [
     BrowserModule
@@ -27,8 +36,9 @@ import { MatFormFieldModule} from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatSelectModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
