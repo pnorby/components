@@ -21,7 +21,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     , FormsModule
     , BrowserAnimationsModule
     , MatCardModule
-    , MatCheckboxModule
+    , MatButtonModule
     , MatCheckboxModule
   ],
   providers: [],
