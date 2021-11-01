@@ -19,3 +19,4 @@ export class TjsMultiplicationComponent implements OnInit {
   multiply = () => this.total = this.numberOne * this.numberTwo;
 
 }
+
