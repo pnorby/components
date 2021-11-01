@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
+import { PnFizzBuzzComponent } from './pn-fizz-buzz/pn-fizz-buzz.component';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,6 +31,7 @@ import { CommonModule } from '@angular/common';
     , MtbSelectComponent
     , JacComponentComponent
     , JvSlackNTellComponent
+    , PnFizzBuzzComponent
   ],
   imports: [
     BrowserModule
