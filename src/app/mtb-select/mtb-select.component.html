@@ -1,19 +1,27 @@
 <mat-card>
-<h1>New quote of the day!</h1>
-<mat-form-field appearance="fill">
-  <mat-label>Select an option</mat-label>
-  <mat-select [(value)]="selected">
-    <mat-option
-    value="I still own you!">
-    Aaron Rodgers</mat-option>
-    <mat-option
-    value="I’m not superstitious, but I am a little ‘stitious.'">
-    Michael Scott</mat-option>
-    <mat-option
-    value="If there’s one thing I hate, it’s losing. If there are two things I hate, then it’s losing and getting cancer.">
-    Kenny Powers</mat-option>
-  </mat-select>
-</mat-form-field>
-
-<p>Quote: {{ selected }}</p>
+  <mat-card-title>
+    New quote of the day!
+  </mat-card-title>
+  <mat-card-body>
+    <mat-form-field appearance="fill">
+      <mat-label>
+        Select an option
+      </mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option value="I still own you!">
+          Aaron Rodgers
+        </mat-option>
+        <mat-option value="I’m not superstitious, but I am a little ‘stitious.'">
+          Michael Scott
+        </mat-option>
+        <mat-option
+          value="If there’s one thing I hate, it’s losing. If there are two things I hate, then it’s losing and getting cancer.">
+          Kenny Powers
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>
+      Quote: {{ selected }}
+    </p>
+  </mat-card-body>
 </mat-card>
