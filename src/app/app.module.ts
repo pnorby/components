@@ -22,6 +22,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { MatInputModule } from '@angular/material/input';
 import { MtbSelectComponent } from './mtb-select/mtb-select.component';
 import { CommonModule } from '@angular/common';
+import { GbatistaAddComponent } from './gbatista-add/gbatista-add.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { CommonModule } from '@angular/common';
     , MtbSelectComponent
     , JacComponentComponent
     , JvSlackNTellComponent
-    , PnFizzBuzzComponent
+    , PnFizzBuzzComponent, GbatistaAddComponent
   ],
   imports: [
     BrowserModule
